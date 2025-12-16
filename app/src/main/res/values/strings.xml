@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">FoodLens</string>
+
+    <string name="settings_title">환경설정</string>
+
+    <string name="settings_account_title">FoodLens 계정</string>
+    <string name="settings_account_sub">동기화 및 계정 관리</string>
+    <string name="settings_manage">관리</string>
+
+    <string name="settings_section_general">일반</string>
+    <string name="settings_push">알림</string>
+    <string name="settings_dark">다크 모드</string>
+    <string name="settings_units">단위</string>
+    <string name="settings_units_value">g / kcal</string>
+
+    <string name="settings_section_info">정보</string>
+    <string name="settings_privacy">개인정보 처리방침</string>
+    <string name="settings_oss">오픈소스 라이선스</string>
+    <string name="settings_version">앱 버전</string>
+
+    <string name="settings_logout">로그아웃</string>
+    <string name="settings_dummy_hint">2021145124.</string>
+
+    <string name="chat_title">Foodlens</string>
+    <string name="chat_hint">무엇이든 물어보세요…</string>
+    <string name="chat_send">전송</string>
+
+</resources>
