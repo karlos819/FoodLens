@@ -6,6 +6,8 @@ FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 분석 결�
 본 프로젝트는 Android 앱 구조 설계, 로컬 데이터 저장(Room), 커스텀 UI 구성,
 확장 가능한 AI 연동 구조를 중심으로 구현되었습니다.
 
+
+
 📌 프로젝트 개요
 
 프로젝트명: FoodLens
@@ -22,7 +24,11 @@ FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 분석 결�
 
 실제 AI 모델 연동이 가능한 구조 설계
 
+
+
+
 🎯 핵심 기능 요약
+
 1️⃣ 음식 분석 흐름 (Analyze → Post)
 
 사용자가 음식 이미지를 입력
@@ -31,6 +37,7 @@ FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 분석 결�
 
 게시글 형태로 기록 저장
 
+
 2️⃣ 게시글(식사 기록) 관리
 
 음식명 / 칼로리 / 메모 / 생성 시간 저장
@@ -38,6 +45,7 @@ FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 분석 결�
 Room Database 기반 로컬 저장
 
 앱 재실행 후에도 데이터 유지
+
 
 3️⃣ 건강 분석 대시보드 
 
@@ -51,12 +59,16 @@ Room Database 기반 로컬 저장
 
 아침 / 점심 / 저녁 / 간식 식사 리스트 표시
 
+
+
 🖥️ 화면 구성
 HomeActivity	앱 메인 화면
 AnalyzeActivity	분석 및 건강 대시보드 화면
 PostActivity	게시글(식사 기록) 작성 화면
 SettingsActivity	설정 화면
 ChatActivity	(확장 기능) AI 채팅 UI
+
+
 
 🧠 설계 특징
 ✔ 단계적 아키텍처 설계
@@ -76,6 +88,8 @@ ML Kit / TFLite / Gemini API 연동이 가능한 구조 유지
 SparklineView: Canvas 기반 커스텀 그래프
 
 Material Components 기반 원형/선형 게이지
+
+
 
 🛠️ 사용 기술 스택
 Android / Kotlin
@@ -105,6 +119,8 @@ RecyclerView
 Coroutine (lifecycleScope)
 
 확장 가능 AI API 구조(Gemini, ML Kit 등)
+
+
 
 프로젝트 구조
 com.example.foodlens
