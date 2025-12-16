@@ -1,50 +1,37 @@
-🍽️ FoodLens – AI 기반 음식 분석 & 건강 관리 Android 앱
+# 🍽️ FoodLens
+> AI 기반 음식 기록 & 건강 분석(Android) 앱  
+> (Room DB + Calpal 스타일 분석 대시보드 + 확장 가능한 AI 구조)
 
-FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 분석 결과를 확인하고,
-식사 기록을 저장하며, 건강 분석 대시보드를 제공하는 Android 애플리케이션입니다.
+---
 
-본 프로젝트는 Android 앱 구조 설계, 로컬 데이터 저장(Room), 커스텀 UI 구성,
-확장 가능한 AI 연동 구조를 중심으로 구현되었습니다.
+## 📌 프로젝트 개요
+FoodLens는 사용자가 촬영한 음식 이미지를 기반으로 결과를 확인하고, 식사 기록(게시글)을 저장하며,  
+Calpal 스타일의 건강 분석 대시보드 UI를 제공하는 Android 네이티브 애플리케이션입니다.
 
+- **문제 정의**: 바쁜 일상에서 식단 기록이 어렵고, 건강 상태를 직관적으로 보기 힘듦  
+- **목표**: 기록 진입 장벽을 낮추고(메모/카드 UI), 시각화로 동기 부여(게이지/그래프) 제공  
+- **현재 구현 범위**: 기능 흐름(Analyze → Post 저장) + 더미 기반 대시보드 완성
 
+---
 
-📌 프로젝트 개요
+## 💡 핵심 가치 제안
+- **기록 자동화(저장)**: 음식명/칼로리/메모를 게시글 형태로 저장하고 추후 조회 가능  
+- **시각화 기반 분석 UI**: Calpal 스타일 카드/게이지/그래프로 건강 상태를 한 화면에 제공  
+- **확장 가능한 AI 구조**: TFLite(assets) / ML Kit / Gemini API 연동 가능 구조 유지  
+- **오프라인 우선**: Room 기반 로컬 DB 저장으로 네트워크 없이도 기록 유지
 
-프로젝트명: FoodLens
+---
 
-플랫폼: Android
+## 🧩 기술 아키텍처
+아래는 FoodLens의 데이터 흐름과 책임 분리를 나타낸 구조입니다.
 
-개발 언어: Kotlin
+```mermaid
+flowchart TB
+  A[Presentation Layer\nActivities / Adapters / CustomView] --> B[Data Layer\nRoom DB (DAO/Entity)]
+  A --> C[AI Layer (Optional)\nTFLite / ML Kit / Gemini]
+  B --> D[(SQLite)]
+  C --> E[External Services\nGemini API / ML Model]
 
-개발 목적
-
-음식 섭취 기록을 직관적으로 관리
-
-분석 결과 및 건강 상태를 시각적으로 제공
-
-실제 AI 모델 연동이 가능한 구조 설계
-
-
-
-
-🎯 핵심 기능 요약
-
-1️⃣ 음식 분석 흐름 (Analyze → Post)
-
-사용자가 음식 이미지를 입력
-
-분석 화면에서 결과 확인
-
-게시글 형태로 기록 저장
-
-
-2️⃣ 게시글(식사 기록) 관리
-
-음식명 / 칼로리 / 메모 / 생성 시간 저장
-
-Room Database 기반 로컬 저장
-
-앱 재실행 후에도 데이터 유지
 
 
 3️⃣ 건강 분석 대시보드 
