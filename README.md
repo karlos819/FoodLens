@@ -71,6 +71,11 @@ UI, 데이터 저장, AI 연동을 분리하여 **유지보수성과 확장성**
 
 ---
 
+## 🎬 앱 시연 영상
+https://drive.google.com/drive/folders/1L30QoPhUionHKighDiWTpek8oVbknU7R?usp=drive_link
+
+---
+
 ## 📂 프로젝트 구조
 
 ```text
