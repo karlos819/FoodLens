@@ -68,7 +68,7 @@ UI, 데이터 저장, AI 연동을 분리하여 **유지보수성과 확장성**
 | **AnalyzeActivity** | 건강 분석 대시보드 |
 | **PostActivity** | 게시글(식사 기록) 작성 및 저장 |
 | **SettingsActivity** | 앱 설정 화면 |
-| **ChatActivity** | AI 채팅 UI (확장 기능) |
+| **ChatActivity** | AI 채팅 UI |
 
 ---
 
